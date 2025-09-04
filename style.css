@@ -1,0 +1,305 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-family: "Playfair Display", serif;
+  font-weight: 100;
+  text-align: center;
+  font-size: 2rem;
+}
+
+body {
+  font-family: "Libre Franklin", sans-serif;
+  line-height: 1.6;
+  background-color: white;
+  color: black;
+}
+
+header {
+  font-family: "Libre Franklin", sans-serif;
+  font-weight: 800;
+  text-align: center;
+  background-color: white;
+  color: white;
+  padding: 1rem;
+  border-bottom: 2px solid gray;
+}
+
+header nav ul {
+  list-style: none;
+}
+
+header nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+header nav ul li a {
+  color: black;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+header nav ul li a:hover {
+  text-decoration: underline;
+  color: blue;
+}
+
+section {
+  padding: 20px;
+  margin: 20px 0;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 1rem 20px;
+  position: relative;
+}
+
+.social-links {
+  position: absolute;
+  right: 20px;
+  bottom: 15px;
+}
+
+.social-links a {
+  margin: 10px;
+  font-size: 24px;
+  color: white;
+  text-decoration: none;
+}
+
+.social-links a:hover {
+  color: #ff6347;
+}
+
+.footer-logo {
+  position: absolute;
+  left: 20px;
+  bottom: 2px;
+}
+
+.footer-logo img {
+  width: 50px;
+  height: auto;
+}
+
+#instafeed {
+  display: block;
+  padding: 0;
+  margin: 0;
+}
+
+#instafeed img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0;
+}
+
+#about-cakes {
+  text-align: center;
+}
+
+#about-cakes p {
+  font-size: 1.15rem;
+}
+
+#flavors {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px 0;
+  text-align: center;
+}
+
+.cake-type {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+  text-align: left;
+  width: 100%;
+  justify-content: flex-start;
+}
+
+.cake-image {
+  margin-right: 50px;
+}
+
+#flavors .cake-type .cake-text h2 {
+  font-size: 1.55rem;
+  font-weight: 800;
+}
+
+#flavors .cake-type .cake-text p {
+  font-size: 1.15rem;
+  font-weight: 500;
+}
+
+.cake-image img {
+  width: auto;
+  max-width: 300px;
+  height: auto;
+  max-height: 450px;
+  object-position: center;
+  border-radius: 8px;
+}
+
+#frosting-comparison {
+  text-align: center;
+  margin: 50px;
+}
+
+.cake-comparison {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.cake {
+  width: 45%;
+  text-align: left;
+}
+
+.cake img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.cake h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  text-align: center;
+  font-weight: 800;
+}
+
+.cake ul {
+  list-style-type: disc;
+  padding: 20px;
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.cake ul li {
+  margin-bottom: 8px;
+  font-size: 1.15rem;
+}
+
+.cake p {
+  font-size: 1.15rem;
+}
+
+.cake-type img {
+  max-width: 400px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.cake-type h2 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.cake-type p {
+  font-size: 1rem;
+  color: #555;
+}
+
+#ordering {
+  text-align: center;
+  font-size: 1.15rem;
+}
+
+.about-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.about-header h2 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.about-image-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.about-image {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 8px;
+}
+
+.about-text {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.contact-details {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  text-align: center;
+}
+
+.column {
+  width: 48%;
+}
+
+.contact-item {
+  margin-bottom: 20px;
+}
+
+.contact-item h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.contact-item p {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.donation h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.donation p {
+  font-size: 1.15rem;
+}
+
+@media (max-width: 768px) {
+  .cake-type {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .cake-image {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .cake-comparison {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-details {
+    flex-direction: column;
+  }
+
+  .column {
+    width: 100%;
+  }
+}
